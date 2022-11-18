@@ -1,5 +1,6 @@
-import express from "express";
+import express from 'express';
 const configViewEngine = (app) => {
+    app.use(express.static('./src/public'))
     app.set("ViewEngine", "ejs");
     app.set("views", "./src/views")
 
