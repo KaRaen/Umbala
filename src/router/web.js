@@ -1,10 +1,12 @@
 import express from "express";
-import homeController, { getHomepage } from '../controller/homeController'
+import homeController, { getHomepage, getDetailpage } from '../controller/homeController'
+
 let router = express.Router();
 
 const initWebRoute = (app) => {
 
     router.get('/', homeController.getHomepage)// ten route & MVC
+    router.get('/details/user/:Id', homeController.getDetailpage)// : thay doi tham so
     router.get('/halo', (req, res) => {
         res.send(`Vinh Truong ne`)
     })
