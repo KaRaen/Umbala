@@ -2,6 +2,7 @@
 import express from 'express';
 import configViewEngine from "./configs/ViewEngine";
 import initWebRoute from './router/web'
+
 require('dotenv').config()
 
 const app = express();
