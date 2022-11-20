@@ -7,6 +7,7 @@ const initWebRoute = (app) => {
 
     router.get('/', homeController.getHomepage)// ten route & MVC
     router.get('/details/user/:Id', homeController.getDetailpage)// : thay doi tham so
+    router.post('/create-new-user', homeController.createNewuser) // 'post' phai giống bên index.ejs
     router.get('/halo', (req, res) => {
         res.send(`Vinh Truong ne`)
     })

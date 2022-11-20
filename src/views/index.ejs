@@ -66,6 +66,39 @@
 
             </table>
         </div>
+        <div class="create-user-container">
+            <form action="/create-new-user" method="POST">
+                <div>
+                    Create a new user:
+                </div>
+                <div>
+                    <label>
+                        firstname:
+                    </label>
+                    <!-- thuộc tính name là để server quan hệ với view (hiển thị ngoài localhost) -->
+                    <input type="text" name="firstnameNew" />
+
+                    <label>
+                        lastname:
+                    </label>
+                    <input type="text" name="lastnameNew" />
+                    <label>
+                        Email:
+                    </label>
+                    <input type="email" name="emailNew" />
+                    <label>
+                        address:
+                    </label>
+                    <input type="text" name="addressNew" />
+                </div>
+                <div>
+                    <button type="submit" class="button-submit">
+                        <!-- gui 1 request -->
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
         <p> End Page </p>
     </div>
     <!-- <img src="/image/anh dai dien.jpg" /> -->
